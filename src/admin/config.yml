@@ -1,0 +1,18 @@
+backend:
+  name: github
+  repo: kyoshi11/gridsome-portfolio-starter
+
+media_folder: "static/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "posts"
+    label: "Posts"
+    folder: "content/posts/"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "タイトル", name: "title", widget: "string"}
+      - {label: "概要", name: "description", widget: "string"}
+      - {label: "公開日", name: "date", widget: "date"}
+      - {label: "内容", name: "body", widget: "markdown"}
