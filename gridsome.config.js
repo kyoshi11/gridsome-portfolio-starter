@@ -7,8 +7,14 @@
 module.exports = {
   siteName: 'Gridsome Portfolio Starter',
   siteDescription: 'A simple portfolio theme for Gridsome powered by Tailwind CSS v1',
-  siteUrl: 'https://gridsome-portfolio-starter.netlify.com',
+  siteUrl: 'https://practical-bhaskara-a2b2f5.netlify.app/',
   plugins: [
+    {
+      use: 'gridsome-plugin-netlify-cms',
+      options: {
+        publicPath: `/admin`
+      }
+    },
     {
       use: 'gridsome-plugin-tailwindcss',
     },
@@ -63,12 +69,6 @@ module.exports = {
       use: '@gridsome/plugin-sitemap',
       options: {
         cacheTime: 600000, // default
-      }
-    },
-    {
-      use: 'gridsome-plugin-netlify-cms',
-      options: {
-        publicPath: `/admin`
       }
     },
   ],
