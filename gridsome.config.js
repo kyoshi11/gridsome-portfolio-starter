@@ -65,6 +65,12 @@ module.exports = {
         cacheTime: 600000, // default
       }
     },
+    {
+      use: `gridsome-plugin-netlify-cms`,
+      options: {
+        publicPath: `/admin`
+      }
+    },
   ],
   templates: {
     Tag: '/tag/:id',
