@@ -67,7 +67,8 @@ module.exports = {
     },
   ],
   templates: {
-    Tag: '/tag/:id'
+    Tag: '/tag/:id',
+    BlogPost: '/blog/:year/:month/:day/:slug'
   },
   transformers: {
     remark: {
