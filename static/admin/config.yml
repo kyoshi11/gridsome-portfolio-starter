@@ -16,7 +16,10 @@ collections:
     identifier_field: title
     fields:
       - {label: "タイトル", name: "title", widget: "string"}
-      - {label: "タグ", name: "tags", widget: "relation"}
+      - {label: "タグ", name: "tags", widget: "select",
+          options: ["投稿", "ICT", "投資"],
+          default: ["投稿"]
+        }
       - {label: "Slug", name: "slugs", widget: "string"}
       - {label: "概要", name: "description", widget: "text"}
       - {label: "公開日", name: "date", widget: "date"}
@@ -36,7 +39,7 @@ collections:
       - {label: "タイトル", name: "title", widget: "string"}
       - {label: "タグ", name: "tags", widget: "select",
           options: ["投稿", "ICT", "投資"],
-          default: ["投稿"]
+          default: ["ICT"]
         }
       - {label: "Slug", name: "slugs", widget: "string"}
       - {label: "概要",name: "description", widget: "text"}
