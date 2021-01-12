@@ -34,7 +34,7 @@ collections:
     identifier_field: title
     fields:
       - {label: "タイトル", name: "title", widget: "string"}
-      - {label: "タグ", name: "tags", widget: "select"
+      - {label: "タグ", name: "tags", widget: "select",
         options:
           - { label: "投稿", value: "post" }
           - { label: "ICT", value: "ict" }
