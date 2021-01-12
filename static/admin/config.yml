@@ -10,14 +10,34 @@ collections:
     label: "Posts"
     folder: "blog/posts/"
     create: true
-    slug: "{{slug}}"
+    slug: "blog/{{slug}}"
+    dentifier_field: title
     fields:
       - {label: "タイトル", name: "title", widget: "string"}
-      - {label: "概要", name: "description", widget: "string"}
+      - {label: "タグ", name: "tags", widget: "list"}
+      - {label: "Slug", name: "slugs", widget: "string"}
+      - {label: "概要", name: "description", widget: "text"}
       - {label: "公開日", name: "date", widget: "date"}
       - {label: "内容", name: "body", widget: "markdown"}
-      - { label: "Featured Image", name: "thumbnail", widget: "image",
+      - { label: "サムネイル画像", name: "thumbnail", widget: "image",
           # default: "/uploads/chocolate-dogecoin.jpg",
           # media_library: config: ,
-          multiple: true
+        }
+
+  - name: "ict"
+    label: "Ict"
+    folder: "blog/ict"
+    create: true
+    slug: "blog/ict/{{fields.slugs}}"
+    identifier_field: title
+    fields:
+      - {label: "タイトル", name: "title", widget: "string"}
+      - {label: "タグ", name: "tags", widget: "list"}
+      - {label: "Slug", name: "slugs", widget: "string"}
+      - {label: "概要",name: "description", widget: "text"}
+      - {label: "公開日", name: "date", widget: "date"}
+      - {label: "内容", name: "body", widget: "markdown"}
+      - { label: "サムネイル画像", name: "thumbnail", widget: "image",
+          # default: "/uploads/chocolate-dogecoin.jpg",
+          # media_library: config: ,
         }
