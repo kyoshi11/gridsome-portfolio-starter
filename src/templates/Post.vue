@@ -12,6 +12,7 @@
           {{ tag.title }}
         </g-link>
       </div>
+      <div>{{ $page.post.thumbnail }}</div>
       <div class="markdown-body mb-8" v-html="$page.post.content" />
       <div class="mb-8">
         <g-link to="/blog" class="font-bold uppercase">ブログ一覧に戻る</g-link>
@@ -25,6 +26,7 @@ query Post ($path: String!) {
   post: post (path: $path) {
     title
     date (format: "MMMM D, Y")
+    thumbnail
     content
     tags {
       title

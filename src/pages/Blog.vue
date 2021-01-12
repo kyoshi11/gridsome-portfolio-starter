@@ -7,7 +7,7 @@
           <span>{{ post.node.date }}</span>
           <span> &middot; </span>
           <span>{{ post.node.timeToRead }} min read</span>
-          <span><{{ post.node.thumbnail }}/span>
+          <span><{{ post.node.thumbnail }}</span>
         </div>
 
         <div class="text-lg mb-4">
