@@ -10,7 +10,7 @@ module.exports = {
   siteUrl: 'https://practical-bhaskara-a2b2f5.netlify.app/',
   plugins: [
     {
-      use: 'gridsome-plugin-netlify-cms',
+      use: `gridsome-plugin-netlify-cms`,
       options: {
         publicPath: `/admin`
       }
