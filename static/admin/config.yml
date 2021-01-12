@@ -16,3 +16,8 @@ collections:
       - {label: "概要", name: "description", widget: "string"}
       - {label: "公開日", name: "date", widget: "date"}
       - {label: "内容", name: "body", widget: "markdown"}
+      - { label: "Featured Image", name: "thumbnail", widget: "image",
+          default: "/uploads/chocolate-dogecoin.jpg",
+          media_library:
+            config: multiple: true
+        }
