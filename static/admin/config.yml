@@ -13,10 +13,10 @@ collections:
     folder: "blog/posts/"
     create: true
     slug: "blog/{{slug}}"
-    dentifier_field: title
+    identifier_field: title
     fields:
       - {label: "タイトル", name: "title", widget: "string"}
-      - {label: "タグ", name: "tags", widget: "list"}
+      - {label: "タグ", name: "tags", widget: "relation"}
       - {label: "Slug", name: "slugs", widget: "string"}
       - {label: "概要", name: "description", widget: "text"}
       - {label: "公開日", name: "date", widget: "date"}
@@ -34,7 +34,7 @@ collections:
     identifier_field: title
     fields:
       - {label: "タイトル", name: "title", widget: "string"}
-      - {label: "タグ", name: "tags", widget: "list"}
+      - {label: "タグ", name: "tags", widget: "relation"}
       - {label: "Slug", name: "slugs", widget: "string"}
       - {label: "概要",name: "description", widget: "text"}
       - {label: "公開日", name: "date", widget: "date"}
