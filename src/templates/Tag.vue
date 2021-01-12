@@ -16,7 +16,7 @@
         </div>
 
         <div class="mb-8">
-          <g-link :to="post.node.path" class="font-bold uppercase">Read More</g-link>
+          <g-link :to="post.node.path" class="font-bold uppercase">さらに読み込む３</g-link>
         </div>
       </div>
 
