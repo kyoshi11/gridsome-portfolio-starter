@@ -22,20 +22,13 @@ module.exports = {
       use: "gridsome-plugin-i18n",
       options: {
         locales: [ // locales list
-          'en-gb',
-          'ja-jp'
+          'en',
+          'ja'
         ],
-        pathAliases: { // path segment alias for each locales
-          'en-gb': 'en',
-          'ja-jp': 'ja'
-        },
-        fallbackLocale: 'en-gb', // fallback language
-        defaultLocale: 'en-gb', // default language
-        enablePathRewrite: true, // rewrite path with locale prefix, default: true
-        rewriteDefaultLanguage: true, // rewrite default locale, default: true
+        defaultLocale: 'en', // default language
         messages: {
-          'en-gb': require('./src/locales/en-gb.json'),
-          'en-gb': require('./src/locales/ja-jp.json'),
+          en: require('./src/locales/en.json'),
+          ja: require('./src/locales/ja.json')
         }
       }
     },
