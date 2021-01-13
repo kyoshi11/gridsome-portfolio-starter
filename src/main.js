@@ -11,24 +11,23 @@ export default function (Vue, { router, head, isClient }) {
   Vue.component('Layout', DefaultLayout)
 
   /* 2021/1/13 add start */
-  Vue.use(VueI18n)
-
-const messages = {
-  en: {
-    message: {
-      welcome: 'Welcome to Your Vue.js App',
-    }
-  },
-  ja: {
-    message: {
-      welcome: 'Vue.jsアプリケーションへようこそ',
+  const messages = {
+    en: {
+      message: {
+        welcome: 'Welcome to Your Vue.js App',
+      }
+    },
+    ja: {
+      message: {
+        welcome: 'Vue.jsアプリケーションへようこそ',
+      }
     }
   }
-}
-const i18n = new VueI18n({
-  locale: 'ja',
-  messages,
-})
+
+  Vue.use(VueI18n, {
+    locale: 'ja',
+    messages,
+  })
   /* 2021/1/13 add end */
 
   Vue.use(VueScrollTo, {
