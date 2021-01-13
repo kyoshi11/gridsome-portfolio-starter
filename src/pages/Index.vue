@@ -48,7 +48,7 @@
             <div class="text-lg text-gray-600">電子カルテシステム</div>
           </li>
           <li class="checkmark">
-            <div>Project Four</div>
+            <div>Project4</div>
             <div class="text-lg text-gray-600">DWH</div>
           </li>
 
