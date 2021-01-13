@@ -1,3 +1,8 @@
 {
-    "welcome": "Welcome to Gridsome i18n!"
+    "welcome": "Welcome to Gridsome i18n!",
+    "docs": "DOCS",
+    "blog": "BLOG",
+    "projects": "PROJECT",
+    "about": "ABOUT",
+    "contact": "CONTACT"
 }

@@ -25,7 +25,7 @@ module.exports = {
           'en',
           'ja'
         ],
-        defaultLocale: 'en', // default language
+        defaultLocale: 'ja', // default language
         messages: {
           en: require('./src/locales/en.json'),
           ja: require('./src/locales/ja.json')

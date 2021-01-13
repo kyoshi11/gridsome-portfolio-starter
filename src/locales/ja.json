@@ -1,3 +1,8 @@
 {
-    "welcome": "ようこそ Gridsome i18n　へ"
+    "welcome": "ようこそ Gridsome i18n　へ",
+    "docs": "文書",
+    "blog": "ブログ",
+    "projects": "プロジェクト",
+    "about": "著者について",
+    "contact": "お問い合わせ"
 }

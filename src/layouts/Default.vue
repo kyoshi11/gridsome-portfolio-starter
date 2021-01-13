@@ -23,21 +23,21 @@
             <theme-switcher :theme="theme" @themeChanged="updateTheme" />
           </li>
           <li>
-            <g-link to="/docs" class="text-copy-primary hover:text-gray-600" data-cypress="docs">Docs</g-link>
+            <g-link to="/docs" class="text-copy-primary hover:text-gray-600" data-cypress="docs">{{ $t('docs') }}</g-link>
           </li>
           <li>
-            <g-link to="/blog" class="text-copy-primary hover:text-gray-600" data-cypress="blog">Blog</g-link>
+            <g-link to="/blog" class="text-copy-primary hover:text-gray-600" data-cypress="blog">{{ $t('blog') }}</g-link>
           </li>
            <li>
-            <a v-if="$route.path === '/'" href="/#projects" v-scroll-to="'#projects'" class="text-copy-primary hover:text-gray-600" data-cypress="projects">Projects</a>
+            <a v-if="$route.path === '/'" href="/#projects" v-scroll-to="'#projects'" class="text-copy-primary hover:text-gray-600" data-cypress="projects">{{ $t('projects') }}</a>
             <g-link v-else to="/#projects" class="text-copy-primary hover:text-gray-600">Projects</g-link>
           </li>
           <li>
-            <a v-if="$route.path === '/'" href="/#about" v-scroll-to="'#about'" class="text-copy-primary hover:text-gray-600" data-cypress="about">About</a>
+            <a v-if="$route.path === '/'" href="/#about" v-scroll-to="'#about'" class="text-copy-primary hover:text-gray-600" data-cypress="about">{{ $t('about') }}</a>
             <g-link v-else to="/#about" class="text-copy-primary hover:text-gray-600">About</g-link>
           </li>
           <li>
-            <a v-if="$route.path === '/'" href="/#contact" v-scroll-to="'#contact'" class="text-copy-primary hover:text-gray-600" data-cypress="contact">Contact</a>
+            <a v-if="$route.path === '/'" href="/#contact" v-scroll-to="'#contact'" class="text-copy-primary hover:text-gray-600" data-cypress="contact">{{ $t('contact') }}</a>
             <g-link v-else to="/#contact" class="text-copy-primary hover:text-gray-600">Contact</g-link>
           </li>
         </ul>
