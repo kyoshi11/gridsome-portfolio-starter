@@ -30,7 +30,7 @@
           </li>
            <li>
             <a v-if="$route.path === '/'" href="/#projects" v-scroll-to="'#projects'" class="text-copy-primary hover:text-gray-600" data-cypress="projects">Projects</a>
-            <g-link v-else to="#projects" class="text-copy-primary hover:text-gray-600">{{ $t('projects') }}</g-link>
+            <g-link v-else :to="$tp('/projects/')" class="text-copy-primary hover:text-gray-600">{{ $t('projects') }}</g-link>
           </li>
           <li>
             <a v-if="$route.path === '/'" href="/#about" v-scroll-to="'#about'" class="text-copy-primary hover:text-gray-600" data-cypress="about">About</a>
