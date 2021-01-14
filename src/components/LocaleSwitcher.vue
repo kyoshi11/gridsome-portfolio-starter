@@ -1,7 +1,7 @@
 <template>
   <select v-model="currentLocale" @change="localeChanged">
     <!--<option v-for="locale in availableLocales" :key="locale" :value="locale">{{ locale }}</option>-->
-    <option v-for="locale in availableLocales" :key="locale" :value="locale">{{ $t('locale') }}</option>
+    <option v-for="locale in availableLocales" :key="locale" :value="locale">{{ $t( {{ locale }} ) }}</option>
   </select>
 </template>
 
