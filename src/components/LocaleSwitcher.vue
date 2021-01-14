@@ -1,7 +1,10 @@
 <template>
   <select v-model="currentLocale" @change="localeChanged">
     <!--<option v-for="locale in availableLocales" :key="locale" :value="locale">{{ locale }}</option>-->
-    <option v-for="locale in availableLocales" :key="locale" :value="locale">{{ $t( "{{ locale }}" ) }}</option>
+    <option v-for="locale in availableLocales" :key="locale" :value="locale">
+        <p v-if="locale==ja">{{ $t( 'ja' ) }}</p>
+        <p v-else-if="locale==en">{{ $t( 'en' ) }}</p>
+    </option>
   </select>
 </template>
 
@@ -11,7 +14,11 @@ export default {
   data: function () {
     return {
       currentLocale: this.$i18n.locale.toString(),
-      availableLocales: this.$i18n.availableLocales
+      availableLocales: this.$i18n.availableLocales,
+      locale: [
+        { id: 'ja', name: 'ja' },
+        { id: 'en', name: 'en' },
+      ]
     }
   },
   methods: {
