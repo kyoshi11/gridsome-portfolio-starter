@@ -14,11 +14,7 @@ export default {
   data: function () {
     return {
       currentLocale: this.$i18n.locale.toString(),
-      availableLocales: this.$i18n.availableLocales,
-      locale: [
-        { id: 'ja', name: 'ja' },
-        { id: 'en', name: 'en' },
-      ]
+      availableLocales: this.$i18n.availableLocales
     }
   },
   methods: {
