@@ -6,7 +6,7 @@
         <div class="text-copy-secondary mb-4">
           <span>{{ post.node.date }}</span>
           <span> &middot; </span>
-          <span>{{ post.node.timeToRead }} min read</span>
+          <span>{{ post.node.timeToRead }} { $t('min read') }}</span>
           <span>{{ post.node.thumbnail }}</span>
         </div>
 
@@ -15,7 +15,7 @@
         </div>
 
         <div class="mb-8">
-          <g-link :to="post.node.path" class="font-bold uppercase">さらに読み込む１</g-link>
+          <g-link :to="post.node.path" class="font-bold uppercase">{ $t('read more') }}１</g-link>
         </div>
       </div> <!-- end post -->
 

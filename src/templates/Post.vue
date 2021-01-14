@@ -15,7 +15,7 @@
       <div>{{ $page.post.thumbnail }}</div>
       <div class="markdown-body mb-8" v-html="$page.post.content" />
       <div class="mb-8">
-        <g-link to="/blog" class="font-bold uppercase">ブログ一覧に戻る</g-link>
+        <g-link to="/blog" class="font-bold uppercase">{ $t('back to blog') }}</g-link>
       </div>
     </div>
   </Layout>
