@@ -23,21 +23,21 @@
             <theme-switcher :theme="theme" @themeChanged="updateTheme" />
           </li>
           <li>
-            <g-link to="/docs" class="text-copy-primary hover:text-gray-600" data-cypress="docs">{{ $t('docs') }}</g-link>
+            <g-link to=$tp('/docs')" class="text-copy-primary hover:text-gray-600" data-cypress="docs">{{ $t('docs') }}</g-link>
           </li>
           <li>
-            <g-link to="/blog" class="text-copy-primary hover:text-gray-600" data-cypress="blog">{{ $t('blog') }}</g-link>
+            <g-link to="$tp('/blog')" class="text-copy-primary hover:text-gray-600" data-cypress="blog">{{ $t('blog') }}</g-link>
           </li>
            <li>
-            <a v-if="$route.path === '/'" href="$tp('/#projects')" v-scroll-to="'#projects'" class="text-copy-primary hover:text-gray-600" data-cypress="projects">Projects</a>
+            <a v-if="$route.path === '/'" href="/#projects" v-scroll-to="'#projects'" class="text-copy-primary hover:text-gray-600" data-cypress="projects">Projects</a>
             <g-link v-else :to="$tp('/#projects')" class="text-copy-primary hover:text-gray-600">{{ $t('projects') }}</g-link>
           </li>
           <li>
-            <a v-if="$route.path === '/'" href="$tp('/#about')"  v-scroll-to="'#about'" class="text-copy-primary hover:text-gray-600" data-cypress="about">About</a>
+            <a v-if="$route.path === '/'" href="/#about"  v-scroll-to="'#about'" class="text-copy-primary hover:text-gray-600" data-cypress="about">About</a>
             <g-link v-else :to="$tp('/#about')" class="text-copy-primary hover:text-gray-600">{{ $t('about') }}</g-link>
           </li>
           <li>
-            <a v-if="$route.path === '/'" href="$tp('/#contact')" v-scroll-to="'#contact'" class="text-copy-primary hover:text-gray-600" data-cypress="contact">Contact</a>
+            <a v-if="$route.path === '/'" href="/#contact" v-scroll-to="'#contact'" class="text-copy-primary hover:text-gray-600" data-cypress="contact">Contact</a>
             <g-link v-else :to="$tp('/#contact')" class="text-copy-primary hover:text-gray-600">{{ $t('contact') }}</g-link>
           </li>
         </ul>
