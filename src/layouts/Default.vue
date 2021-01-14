@@ -24,7 +24,7 @@
           </li>
           <li>
             <a v-if="$route.path === '/'" href="/docs" class="text-copy-primary hover:text-gray-600" data-cypress="docs">docs</a>
-            <g-link to=$tp('/docs')" class="text-copy-primary hover:text-gray-600" data-cypress="docs">{{ $t('docs') }}</g-link>
+            <g-link to="$tp('/docs')" class="text-copy-primary hover:text-gray-600" data-cypress="docs">{{ $t('docs') }}</g-link>
           </li>
           <li>
             <a v-if="$route.path === '/'" href="/blog" class="text-copy-primary hover:text-gray-600" data-cypress="blog">blog</a>
