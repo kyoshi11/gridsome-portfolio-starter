@@ -24,11 +24,11 @@
           </li>
           <li>
             <a v-if="$route.path === '/'" href="/docs" class="text-copy-primary hover:text-gray-600" data-cypress="docs">docs</a>
-            <g-link to="$tp('/docs')" class="text-copy-primary hover:text-gray-600" data-cypress="docs">{{ $t('docs') }}</g-link>
+            <g-link v-else :to="$tp('/docs')" class="text-copy-primary hover:text-gray-600" data-cypress="docs">{{ $t('docs') }}</g-link>
           </li>
           <li>
             <a v-if="$route.path === '/'" href="/blog" class="text-copy-primary hover:text-gray-600" data-cypress="blog">blog</a>
-            <g-link to="$tp('/blog')" class="text-copy-primary hover:text-gray-600" data-cypress="blog">{{ $t('blog') }}</g-link>
+            <g-link v-else :to="$tp('/blog')" class="text-copy-primary hover:text-gray-600" data-cypress="blog">{{ $t('blog') }}</g-link>
           </li>
            <li>
             <a v-if="$route.path === '/'" href="/#projects" v-scroll-to="'#projects'" class="text-copy-primary hover:text-gray-600" data-cypress="projects">Projects</a>
