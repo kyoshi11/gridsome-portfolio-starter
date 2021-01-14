@@ -15,7 +15,7 @@
         </div>
 
         <div class="mb-8">
-          <g-link :to="post.node.path" class="font-bold uppercase">{ $t('read more') }}１</g-link>
+          <g-link :to="post.node.path" class="font-bold uppercase">{{ $t('read more') }}１</g-link>
         </div>
       </div> <!-- end post -->
 
