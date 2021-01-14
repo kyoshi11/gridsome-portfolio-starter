@@ -56,7 +56,7 @@
           <div>@{{ new Date().getFullYear() }} kyoshi</div>
           <div>
             <a href="/rss.xml" class="text-white hover:text-gray-400 font-normal">RSS Feed</a> |
-            <a href="/sitemap.xml" class="text-white hover:text-gray-400 font-normal">Sitemap</a>
+            <a href="/sitemap.xml" class="text-white hover:text-gray-400 font-normal">{{ $t('sitemap') }}</a>
           </div>
         </div>
         <ul class="flex items-center space-x-8">

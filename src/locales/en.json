@@ -1,8 +1,17 @@
 {
     "welcome": "Welcome to Gridsome i18n!",
+
     "docs": "DOCS",
     "blog": "BLOG",
     "projects": "PROJECT",
     "about": "ABOUT",
-    "contact": "CONTACT"
+    "contact": "CONTACT",
+
+    "read more": "Ream More",
+    "search": "Search",
+
+    "prev": "Prev",
+    "next": "Next",
+
+    "sitemap": "Sitemap"
 }
