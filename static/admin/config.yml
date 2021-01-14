@@ -31,9 +31,9 @@ collections:
 
   - name: "ict"
     label: "Ict"
-    folder: "blog/ict"
+    folder: "ict"
     create: true
-    slug: "blog/ict/{{fields.slugs}}"
+    slug: "{{fields.slugs}}"
     identifier_field: title
     fields:
       - {label: "タイトル", name: "title", widget: "string"}
