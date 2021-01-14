@@ -6,6 +6,7 @@
         <div class="leading-tight">Gridsome Portfolio Starter</div>
         <div class="text-green-700 leading-tight">Powered by Vue.js &amp; Tailwind v1</div>
         -->
+        <locale-switcher></locale-switcher>
         <div class="leading-tight">Kyoshi Sites</div>
       </div>
       <div class="mt-8 sm:mt-0">
@@ -155,9 +156,13 @@
 </template>
 
 <script>
+import LocaleSwitcher from '@/components/LocaleSwitcher.vue'
 export default {
   metaInfo: {
     title: 'Home'
+  },
+  components: {
+    LocaleSwitcher
   }
 }
 </script>
