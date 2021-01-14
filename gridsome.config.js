@@ -28,7 +28,7 @@ module.exports = {
         defaultLocale: 'ja', // default language
         messages: {
           en: require('./src/locales/en.json'),
-          日本語: require('./src/locales/ja.json')
+          ja: require('./src/locales/ja.json')
         }
       }
     },
