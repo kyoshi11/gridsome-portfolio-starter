@@ -2,8 +2,8 @@
   <select v-model="currentLocale" @change="localeChanged">
     <!--<option v-for="locale in availableLocales" :key="locale" :value="locale">{{ locale }}</option>-->
     <option v-for="locale in availableLocales" :key="locale" :value="locale">
-        <p v-if="locale==ja">{{ $t( 'ja' ) }}</p>
-        <p v-else-if="locale==en">{{ $t( 'en' ) }}</p>
+        <p v-if="{{ locale }}==ja">{{ $t( 'ja' ) }}</p>
+        <p v-else-if="{{ locale }}==en">{{ $t( 'en' ) }}</p>
     </option>
   </select>
 </template>
