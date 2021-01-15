@@ -23,5 +23,10 @@
     "en": "英語",
 
     "experience project": "経験プロジェクト",
-    "skill": "スキル"
+    "skill": "スキル",
+
+    "project1": "BPMS & GPS運行管理",
+    "project2": "GPS運行管理システム＆電話受付",
+    "project3": "電子カルテ",
+    "project4": "DWH"
 }
