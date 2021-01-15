@@ -39,19 +39,19 @@
         <ul class="text-lg sm:text-xl space-y-6">
           <li class="checkmark">
             <div>Project１</div>
-            <div class="text-lg text-gray-600">{{ $t('project１') }}</div>
+            <div class="text-lg text-gray-600">{{ $t('project1') }}</div>
           </li>
           <li class="checkmark">
             <div>Project2</div>
-            <div class="text-lg text-gray-600">{{ $t('project２') }}</div>
+            <div class="text-lg text-gray-600">{{ $t('project2') }}</div>
           </li>
           <li class="checkmark">
             <div>Project3</div>
-            <div class="text-lg text-gray-600">{{ $t('project３') }}</div>
+            <div class="text-lg text-gray-600">{{ $t('project3') }}</div>
           </li>
           <li class="checkmark">
             <div>Project4</div>
-            <div class="text-lg text-gray-600">{{ $t('project４') }}</div>
+            <div class="text-lg text-gray-600">{{ $t('project4') }}</div>
           </li>
 
         </ul>
