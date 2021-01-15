@@ -39,19 +39,19 @@
         <ul class="text-lg sm:text-xl space-y-6">
           <li class="checkmark">
             <div>Project１</div>
-            <div class="text-lg text-gray-600">DWH</div>
+            <div class="text-lg text-gray-600">{{ $t('project１') }}</div>
           </li>
           <li class="checkmark">
             <div>Project2</div>
-            <div class="text-lg text-gray-600">GPS運行管理システム＆電話受付</div>
+            <div class="text-lg text-gray-600">{{ $t('project２') }}</div>
           </li>
           <li class="checkmark">
             <div>Project3</div>
-            <div class="text-lg text-gray-600">電子カルテシステム</div>
+            <div class="text-lg text-gray-600">{{ $t('project３') }}</div>
           </li>
           <li class="checkmark">
             <div>Project4</div>
-            <div class="text-lg text-gray-600">DWH</div>
+            <div class="text-lg text-gray-600">{{ $t('project４') }}</div>
           </li>
 
         </ul>
