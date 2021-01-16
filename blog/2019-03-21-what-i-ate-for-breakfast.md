@@ -1,7 +1,7 @@
 ---
 title: What I Ate for Breakfast
 path: /what-i-ate-for-breakfast
-language: "ja"
+language: ja
 date: 2019-03-21
 summary: Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic rerum earum quos explicabo suscipit maxime iste qui nihil. Reiciendis asperiores minus necessitatibus
 tags: ['lifestyle']
