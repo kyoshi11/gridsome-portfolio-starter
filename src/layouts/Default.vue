@@ -119,7 +119,9 @@ import ThemeSwitcher from '../components/ThemeSwitcher'
 export default {
   components: {
     SearchInput,
-    ThemeSwitcher
+    ThemeSwitcher,
+    LocaleSwitcher
+  }
   },
   mounted() {
     this.theme = localStorage.getItem('theme') || 'theme-light'
