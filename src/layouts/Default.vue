@@ -115,6 +115,7 @@ query {
 <script>
 import SearchInput from '../components/SearchInput'
 import ThemeSwitcher from '../components/ThemeSwitcher'
+import LocaleSwitcher from '@/components/LocaleSwitcher.vue'
 
 export default {
   components: {
