@@ -25,6 +25,7 @@ query Documentation {
         id
         path
         title
+        language
         excerpt
       }
     }
