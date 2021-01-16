@@ -25,6 +25,7 @@
 query Post ($path: String!) {
   post: post (path: $path) {
     title
+    language
     date (format: "MMMM D, Y")
     thumbnail
     content
