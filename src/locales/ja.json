@@ -19,8 +19,10 @@
 
     "back to blog": "ブログ一覧に戻る",
 
-    "ja": "日本語",
-    "en": "英語",
+    "locale": {
+        "ja": "日本語",
+        "en": "英語"
+    },
 
     "experience project": "経験プロジェクト",
     "skill": "スキル",
@@ -30,5 +32,5 @@
     "project3": "電子カルテ",
     "project4": "DWH",
 
-    "introduction": "this gridsome theme was forked from my <a href='https://andremadarang.com'>personal website</a>. I added more features and decided to release it as an open source project. Check it out on <a href='https://github.com/drehimself/gridsome-portfolio-starter'>GitHub</a> or check out the <a href='https://www.youtube.com/watch?v=uHo6o1TNQeE'>screencast I did</a>. Feel free to use it for your own site or projects! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima, repellat. Dolores iure, quas perspiciatis rerum quaerat atque eum repellat autem" 
+    "introduction": "私のポートフォリオサイトにようこそ。過去経験したプロジェクトや技術スキルなどを掲載しております。趣味としてはトレッキング、サイクリング等、体を動かすところですかね。あとはネットサーフィンなどです。this gridsome theme was forked from my <a href='https://andremadarang.com'>personal website</a>. I added more features and decided to release it as an open source project. Check it out on <a href='https://github.com/drehimself/gridsome-portfolio-starter'>GitHub</a> or check out the <a href='https://www.youtube.com/watch?v=uHo6o1TNQeE'>screencast I did</a>. Feel free to use it for your own site or projects! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima, repellat. Dolores iure, quas perspiciatis rerum quaerat atque eum repellat autem" 
 }

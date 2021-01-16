@@ -19,9 +19,10 @@
 
     "back to blog": "Back to Blog",
 
-    "ja": "Japanese",
-    "en": "English",
-
+    "locale": {
+        "ja": "Japanese",
+        "en": "English"
+    },
     "experience project": "Experience Project",
     "skill": "Skill",
 
