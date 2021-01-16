@@ -2,6 +2,7 @@
   <Layout>
     <div class="container-inner mx-auto my-16">
       <h1 class="text-4xl font-bold leading-tight">{{ $page.post.title }} normal</h1>
+      <div class="mb-8">{{ $page.post.language}}</div>
       <div class="text-xl text-gray-600 mb-4">{{ $page.post.date }}</div>
       <div class="flex mb-8 text-sm">
         <g-link
@@ -26,7 +27,7 @@ query Post ($path: String!) {
   post: post (path: $path) {
     title
     language
-    date (format: "MMMM D, Y")
+    date (format: "Y/MM/D")
     thumbnail
     content
     tags {
