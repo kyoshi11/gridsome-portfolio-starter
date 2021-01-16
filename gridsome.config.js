@@ -117,7 +117,9 @@ module.exports = {
   ],
   templates: {
     Tag: '/tag/:id',
-    Post: '/blog/:year/:month/:day/:slug'
+    Post: '/blog/:year/:month/:day/:slug',
+    PostEn: '/en/blog/:year/:month/:day/:slug',
+    PostJa: '/ja/blog/:year/:month/:day/:slug'
   },
   transformers: {
     remark: {
