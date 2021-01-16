@@ -11,7 +11,6 @@
       <div class="mt-8 sm:mt-0">
         <g-image src="../../static/developer.svg" alt="hero" class="mx-auto sm:mx-0" />
         <!--<g-image src="../../static/logo.png" alt="hero" class="mx-auto sm:mx-0" />-->
-        <locale-switcher></locale-switcher>
       </div>
     </div> <!-- end hero -->
 
