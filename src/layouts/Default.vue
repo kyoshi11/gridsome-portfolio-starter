@@ -7,6 +7,8 @@
           <g-link v-if="theme === 'theme-light'" to="/"><g-image src="../../static/logo.png" class="w-40" alt="logo" /></g-link>
           <!--<g-link v-else to="/"><g-image src="../../static/logo_dark_mode.svg" class="w-40" alt="logo" /></g-link>-->
           <g-link v-else to="/"><g-image src="../../static/logo_dark_mode.png" class="w-40" alt="logo" /></g-link>
+        </div>
+        <div>
           <locale-switcher></locale-switcher>
         </div>
         <div class="block lg:hidden">
