@@ -122,7 +122,6 @@ export default {
     SearchInput,
     ThemeSwitcher,
     LocaleSwitcher
-  }
   },
   mounted() {
     this.theme = localStorage.getItem('theme') || 'theme-light'
