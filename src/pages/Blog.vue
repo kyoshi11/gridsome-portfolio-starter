@@ -31,6 +31,7 @@
 
 <page-query>
 query Posts ($page: Int) {
+  alert("Clear１！　$page" + $page)
   posts: allPost (sortBy: "date", order: DESC, perPage: 3, page: $page) @paginate {
     totalCount
     pageInfo {
