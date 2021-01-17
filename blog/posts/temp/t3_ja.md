@@ -1,0 +1,10 @@
+---
+title: テスト３
+tags: ICT
+language: ja
+slugs: t3
+description: テスト３
+date: 2021-01-16T14:48:49.461Z
+thumbnail: /uploads/logo.png
+---
+テスト３だよ
