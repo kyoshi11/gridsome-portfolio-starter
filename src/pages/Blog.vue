@@ -4,7 +4,7 @@
       <div v-for="post in $page.posts.edges" :key="post.id" class="post border-gray-400 border-b mb-12">
         <div>post::{{ post.language }}</div>
         <div>node::{{ post.node.language }}</div>
-        <div v-if="post.node.language=='ja'"></div>
+        <div v-if="post.node.language=='ja'">
           <h2 class="text-3xl font-bold"><g-link :to="post.node.path" class="text-copy-primary">{{ post.node.title }} おお</g-link></h2>
           <div class="text-copy-secondary mb-4">
             <span>{{ post.node.date }}</span>
