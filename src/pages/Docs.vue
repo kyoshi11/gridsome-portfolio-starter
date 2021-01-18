@@ -9,7 +9,7 @@
         </div>
 
         <div class="mb-8">
-          <g-link :to="doc.node.path" class="font-bold uppercase">さらに読み込む２</g-link>
+          <g-link :to="doc.node.path" class="font-bold uppercase">{{ $t('read more') }}２</g-link>
         </div>
       </div> <!-- end post -->
 

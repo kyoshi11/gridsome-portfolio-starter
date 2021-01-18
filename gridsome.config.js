@@ -19,6 +19,20 @@ module.exports = {
       use: 'gridsome-plugin-tailwindcss',
     },
     {
+      use: "gridsome-plugin-i18n",
+      options: {
+        locales: [ // locales list
+          'en',
+          'ja'
+        ],
+        defaultLocale: 'ja', // default language
+        messages: {
+          en: require('./src/locales/en.json'),
+          ja: require('./src/locales/ja.json')
+        }
+      }
+    },
+    {
       use: '@gridsome/vue-remark',
       options: {
         typeName: 'Documentation', // Required
@@ -35,6 +49,35 @@ module.exports = {
       options: {
         path: 'blog/**/*.md',
         typeName: 'Post',
+        refs: {
+          tags: {
+            typeName: 'Tag',
+            route: "/tag/:id",
+            create: true
+          }
+        }
+      }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'blog/en/**/*.md',
+        typeName: 'PostEn',
+        refs: {
+          tags: {
+            typeName: 'Tag',
+            route: "/tag/:id",
+            //route: '/blog/:slug'
+            create: true
+          }
+        }
+      }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'blog/ja/**/*.md',
+        typeName: 'PostJa',
         refs: {
           tags: {
             typeName: 'Tag',
@@ -75,7 +118,9 @@ module.exports = {
   ],
   templates: {
     Tag: '/tag/:id',
-    Post: '/blog/:year/:month/:day/:slug'
+    Post: '/blog/:year/:month/:day/:slug',
+    // PostEn: '/en/blog/:year/:month/:day/:slug',
+    // PostJa: '/ja/blog/:year/:month/:day/:slug'
   },
   transformers: {
     remark: {
