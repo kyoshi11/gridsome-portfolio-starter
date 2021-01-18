@@ -12,7 +12,7 @@ collections:
     label: "Posts"
     folder: "blog/posts/"
     create: true
-    slug: "blog/{{slugs}}"
+    slug: "{{fields.slugs}}"
     identifier_field: title
     fields:
       - {label: "タイトル", name: "title", widget: "string"}
@@ -33,7 +33,7 @@ collections:
     label: "Ict"
     folder: "blog/ict"
     create: true
-    slug: "blog/{{slugs}}"
+    slug: "{{fields.slugs}}"
     identifier_field: title
     fields:
       - {label: "タイトル", name: "title", widget: "string"}
