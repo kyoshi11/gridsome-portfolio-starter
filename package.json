@@ -12,7 +12,8 @@
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.6.4",
     "@gridsome/vue-remark": "^0.2.6",
-    "autoprefixer": "^10.2.1",
+    "@tailwindcss/postcss7-compat": "^2.0.2",
+    "autoprefixer": "^9",
     "axios": "^0.21.1",
     "gridsome": "^0.7.23",
     "gridsome-plugin-i18n": "^1.6.0",
@@ -20,13 +21,14 @@
     "gridsome-plugin-remark-shiki": "^0.6.0",
     "gridsome-plugin-rss": "^1.2.0",
     "netlify-cms": "^2.10.80",
-    "postcss": "^8.2.4",
-    "tailwindcss": "^2.0.2",
+    "postcss": "^7",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
     "vue-fuse": "^2.2.1",
     "vue-scrollto": "^2.20.0"
   },
   "devDependencies": {
     "cypress": "^6.0.0",
-    "gridsome-plugin-tailwindcss": "^3.0.1"
+    "gridsome-plugin-tailwindcss": "^3.0.1",
+    "minimist": "^1.2.5"
   }
 }
