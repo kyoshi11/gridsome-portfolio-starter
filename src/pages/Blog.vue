@@ -21,6 +21,7 @@
             <g-link :to="post.node.path" class="font-bold uppercase">{{ $t('read more') }}１</g-link>
           </div>
         </div>
+        <div>{{ post.node.language }}</div>
       </div> <!-- end post -->
 
       <pagination-posts
