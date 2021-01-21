@@ -6,7 +6,7 @@
         <div>path１::{{ post.node.path }}</div>
         <!-- <div>path２::{{ $route.path　}}</div> -->
         <!-- 言語毎に表示を分ける -->
-        <div v-if="post.node.language === this.$i18n.locale">
+        <div v-if="post.node.language === locale">
           <h2 class="text-3xl font-bold"><g-link :to="post.node.path" class="text-copy-primary">{{ post.node.title }}</g-link></h2>
           <div class="text-copy-secondary mb-4">
             <span>{{ post.node.date }}</span>
@@ -64,6 +64,9 @@ query Posts ($page: Int) {
 import PaginationPosts from '../components/PaginationPosts'
 
 export default {
+  data:{
+    locale: this.$i18n.locale
+  },
   metaInfo: {
     title: 'Blog'
   },
