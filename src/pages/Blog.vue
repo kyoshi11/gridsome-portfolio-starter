@@ -11,8 +11,8 @@
             <span>{{ post.node.date }}</span>
             <span> &middot; </span>
             <!-- <span>{{ post.node.timeToRead }} {{ $t('min read') }}</span> -->
-            <span>{{ post.node.thumbnail }}</span>
           </div>
+          <div class="markdown-body mb-8" v-html="post.node.thumbnail" />
 
           <div class="text-lg mb-4">
             {{ post.node.summary }}

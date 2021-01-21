@@ -13,7 +13,7 @@
           {{ tag.title }}
         </g-link>
       </div>
-      <div>{{ $page.post.thumbnail }}</div>
+      <div class="markdown-body mb-8" v-html="$page.post.thumbnail" />
       <div class="markdown-body mb-8" v-html="$page.post.content" />
       <div class="mb-8">
         <g-link to="/blog" class="font-bold uppercase">{{ $t('back to blog') }}</g-link>
