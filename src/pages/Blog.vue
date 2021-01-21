@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <div class="container-inner mx-auto py-16">
-      <div>{{ this.$i18n.locale  }}</div>
+      <div aa="$i18n.locale"">{{ this.$i18n.locale  }}</div>
       <div v-for="post in $page.posts.edges" :key="post.id" class="post border-gray-400 border-b mb-12">
         <div>path１::{{ post.node.path }}</div>
         <!-- <div>path２::{{ $route.path　}}</div> -->
