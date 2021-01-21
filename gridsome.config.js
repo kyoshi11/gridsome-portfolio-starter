@@ -59,35 +59,6 @@ module.exports = {
       }
     },
     {
-      use: '@gridsome/source-filesystem',
-      options: {
-        path: 'blog/en/**/*.md',
-        typeName: 'PostEn',
-        refs: {
-          tags: {
-            typeName: 'Tag',
-            route: "/tag/:id",
-            //route: '/blog/:slug'
-            create: true
-          }
-        }
-      }
-    },
-    {
-      use: '@gridsome/source-filesystem',
-      options: {
-        path: 'blog/ja/**/*.md',
-        typeName: 'PostJa',
-        refs: {
-          tags: {
-            typeName: 'Tag',
-            route: "/tag/:id",
-            create: true
-          }
-        }
-      }
-    },
-    {
       use: 'gridsome-plugin-rss',
       options: {
         contentTypeName: 'Post',
@@ -119,7 +90,7 @@ module.exports = {
   templates: {
     Tag: '/tag/:id',
     //Post: '/blog/:year/:month/:day/:slug',
-    Post: '/:locale/blog/:year/:month/:day/:slug',
+    Post: '/blog/:year/:month/:day/:slug',
     // PostEn: '/en/blog/:year/:month/:day/:slug',
     // PostJa: '/ja/blog/:year/:month/:day/:slug'
   },
