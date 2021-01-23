@@ -17,6 +17,12 @@ module.exports = {
     },
     {
       use: 'gridsome-plugin-tailwindcss',
+      options: {
+        tailwindConfig: './tailwind.config.js',
+        presetEnvConfig: {},
+        shouldImport: false,
+        shouldTimeTravel: false
+      }
     },
     {
       use: "gridsome-plugin-i18n",
@@ -26,6 +32,8 @@ module.exports = {
           'ja'
         ],
         defaultLocale: 'ja', // default language
+        fallbackLanguage: 'ja',
+        //enablePathGeneration: false, 
         messages: {
           en: require('./src/locales/en.json'),
           ja: require('./src/locales/ja.json')
@@ -44,7 +52,8 @@ module.exports = {
       ],
       }
     },
-    {
+    
+  {
       use: '@gridsome/source-filesystem',
       options: {
         path: 'blog/**/*.md',
@@ -57,7 +66,23 @@ module.exports = {
           }
         }
       }
-    },
+  },
+
+//    {
+//      use: '@gridsome/source-filesystem',
+//      options: {
+//        path: 'blog/post/:language/**/*.md',
+//        typeName: 'Post',
+//        refs: {
+//          tags: {
+//            typeName: 'Tag',
+//            route: "/tag/:id",
+//            create: true
+//          }
+//        }
+//      },
+//    },    
+
     {
       use: 'gridsome-plugin-rss',
       options: {
@@ -89,7 +114,6 @@ module.exports = {
   ],
   templates: {
     Tag: '/tag/:id',
-    //Post: '/blog/:year/:month/:day/:slug',
     Post: '/blog/:year/:month/:day/:slug',
     // PostEn: '/en/blog/:year/:month/:day/:slug',
     // PostJa: '/ja/blog/:year/:month/:day/:slug'

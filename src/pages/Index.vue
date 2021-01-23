@@ -16,7 +16,6 @@
 
     <div class="container-inner mx-auto">
       <p class="text-lg sm:text-xl">{{ $t('introduction') }}</p>
-
       <div class="flex justify-between items-center py-6">
         <div class="w-full sm:w-1/2 px-8 py-8 sm:py-0">
           <g-image src="../../static/mind_map.svg" alt="browser" />
@@ -205,14 +204,16 @@
 </template>
 
 <script>
-import LocaleSwitcher from '@/components/LocaleSwitcher.vue'
+// import LocaleSwitcher from '@/components/LocaleSwitcher.vue'
 export default {
   metaInfo: {
     title: 'Home'
   },
+  /*
   components: {
     LocaleSwitcher
   }
+  */
 }
 </script>
 

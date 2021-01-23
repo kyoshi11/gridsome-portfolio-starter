@@ -1,6 +1,7 @@
 <template>
   <Layout>
     <div class="container-inner mx-auto py-16">
+      <div :bb="$route.path">path:::{{ this.$route.path }}</div>
       <div v-for="doc in $page.docs.edges" :key="doc.id" class="post border-gray-400 border-b mb-12">
         <h2 class="text-3xl font-bold"><g-link :to="doc.node.path" class="text-copy-primary">{{ doc.node.title }}</g-link></h2>
 
@@ -9,7 +10,7 @@
         </div>
 
         <div class="mb-8">
-          <g-link :to="doc.node.path" class="font-bold uppercase">{{ $t('read more') }}２</g-link>
+          <g-link :to="$context.locale + '/' + doc.node.path" class="font-bold uppercase">{{ $t('read more') }}２</g-link>
         </div>
       </div> <!-- end post -->
 
