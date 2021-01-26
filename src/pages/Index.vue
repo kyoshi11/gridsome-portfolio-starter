@@ -124,6 +124,7 @@
           </li>
         </ul>
       </div> 
+    </div>
 
     <!-- end get-to-know me -->
     <!--
@@ -204,11 +205,11 @@
 </template>
 
 <script>
-// import LocaleSwitcher from '@/components/LocaleSwitcher.vue'
+/* import LocaleSwitcher from '@/components/LocaleSwitcher.vue'　*/
 export default {
   metaInfo: {
     title: 'Home'
-  },
+  }
   /*
   components: {
     LocaleSwitcher
