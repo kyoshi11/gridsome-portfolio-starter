@@ -1,12 +1,15 @@
 ---
-title: ict2
-description: ict2
-language: en
-date: 2021-01-12T07:17:39.773Z
-summary: Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic rerum earum quos explicabo suscipit maxime iste qui nihil. Reiciendis asperiores minus necessitatibus
-thumbnail: /logo.png
+summary: Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic rerum
+  earum quos explicabo suscipit maxime iste qui nihil. Reiciendis asperiores
+  minus necessitatibus
+slugs: ict2_en
 slug: ict2_en
-tags: ['itc', 'test']
+title: ict2
+tags: ICT
+description: ict2
+date: 2021-01-12T07:17:39.773Z
+thumbnail: /logo.png
+language: en
 ---
 This is a Test.
 
