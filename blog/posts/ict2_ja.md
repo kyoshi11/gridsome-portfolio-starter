@@ -1,12 +1,15 @@
 ---
-title: ict2
-description: ict2
-language: ja
-date: 2021-01-12T07:17:40.773Z
 summary: サマリ
-thumbnail: /logo.png
+slugs: ict2_ja
 slug: ict2_ja
-tags: ['itc', 'test']
+title: ict2日本語です
+tags:
+  - itc
+  - test
+description: ict2
+date: 2021-01-12T07:17:40.773Z
+thumbnail: /logo.png
+language: ja
 ---
 これはテスト2です。
 
