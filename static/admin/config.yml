@@ -9,7 +9,7 @@ publish_mode: editorial_workflow
 
 collections:
   - label: "投稿"
-    name: "posts"
+    name: "posts_ja"
     folder: "blog/posts/"
     create: true
     slug: "{{fields.slugs}}"
@@ -31,7 +31,7 @@ collections:
           # media_library: config: ,
         }
   - label: "Posts"
-    name: "posts"
+    name: "posts_en"
     folder: "blog/posts/"
     create: true
     slug: "{{fields.slugs}}"
@@ -53,8 +53,8 @@ collections:
           # media_library: config: ,
         }
 
-  - label: "ICT Ja"
-    name: "ict"
+  - label: "ICT"
+    name: "ict_ja"
     folder: "blog/ict"
     create: true
     slug: "{{fields.slugs}}"
@@ -74,8 +74,8 @@ collections:
           # default: "/uploads/chocolate-dogecoin.jpg",
           # media_library: config: ,
         }
-  - label: "ICT En"
-    name: "ict"
+  - label: "ICT"
+    name: "ict_en"
     folder: "blog/ict"
     create: true
     slug: "{{fields.slugs}}"
