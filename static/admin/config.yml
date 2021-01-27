@@ -82,7 +82,7 @@ collections:
     slug: "{{fields.slugs}}"
     identifier_field: title
     fields:
-      - {label: "Language", name: "language", widget: "select", options: ["日本語", "英語"]},default: ["日本語"]}
+      - {label: "Language", name: "language", widget: "select", options: ["日本語", "英語"],default: ["日本語"]}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Tag", name: "tags", widget: "select",
           options: ["Post", "ICT", "Invest"],
