@@ -11,7 +11,7 @@ publish_mode: editorial_workflow
 collections:
   - label: "Posts（日本語）"
     name: "posts_ja"
-    folder: "blog/posts/{{year}}-{{month}}-{{day}}"
+    folder: "blog/posts/"
     create: true
     slug: "{{fields.slugs}}"
     identifier_field: title
@@ -19,27 +19,27 @@ collections:
     fields:
       - {label: "言語", name: "language", widget: "select", options: ["日本語", "英語"],default: ["日本語"]}
       - {label: "タイトル", name: "title", widget: "string"}
-      - {label: "タグ", name: "tags", widget: "select",default: ["日本語"]}
-          options: ["投稿", "ICT", "投資"]
+      - {label: "タグ", name: "tags", widget: "select",default: ["日本語"],
+          options: ["投稿", "ICT", "投資"],
           default: ["投稿"]
         }
       - {label: "Slug", name: "slugs", widget: "string"}
       - {label: "説明", name: "description", widget: "text"}
       - {label: "公開日", name: "date", widget: "date"}
       - {label: "内容", name: "body", widget: "markdown"}
-      - { label: "サムネイル画像", name: "thumbnail", widget: "image",
+      - { label: "サムネイル画像", name: "thumbnail", widget: "image"
           # default: "/uploads/chocolate-dogecoin.jpg",
           # media_library: config: ,
         }
   - label: "Posts（英語）"
     name: "posts_en"
-    folder: "blog/posts/{{year}}-{{month}}-{{day}}"
+    folder: "blog/posts/"
     create: true
     slug: "{{fields.slugs}}"
     identifier_field: title
     filter: {field: "language", value: "en"}
     fields:
-      - {label: "Language", name: "language", widget: "select", options: ["en", "ja"],default: ["日本語"]}
+      - {label: "Language", name: "language", widget: "select", options: ["en", "ja"], default: ["日本語"]}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Tag", name: "tags", widget: "select",
           options: ["Post", "ICT", "Invest"],
@@ -49,19 +49,19 @@ collections:
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Published Date", name: "date", widget: "date"}
       - {label: "Content", name: "body", widget: "markdown"}
-      - { label: "Thumnail", name: "thumbnail", widget: "image",
+      - { label: "Thumnail", name: "thumbnail", widget: "image"
           # default: "/uploads/chocolate-dogecoin.jpg",
           # media_library: config: ,
         }
 
   - label: "ICT(日本語)"
     name: "ict_ja"
-    folder: "blog/ict/{{year}}-{{month}}-{{day}}"
+    folder: "blog/ict/"
     create: true
     slug: "{{fields.slugs}}"
     identifier_field: title
     fields:
-      - {label: "言語", name: "language", widget: "select", options: ["日本語", "英語"],default: ["日本語"]}
+      - {label: "言語", name: "language", widget: "select", options: ["日本語", "英語"], default: ["日本語"]}
       - {label: "タイトル", name: "title", widget: "string"}
       - {label: "タグ", name: "tags", widget: "select",
           options: ["投稿", "ICT", "投資"],
@@ -71,18 +71,18 @@ collections:
       - {label: "説明", name: "description", widget: "text"}
       - {label: "公開日", name: "date", widget: "date"}
       - {label: "内容", name: "body", widget: "markdown"}
-      - { label: "サムネイル画像", name: "thumbnail", widget: "image",
+      - { label: "サムネイル画像", name: "thumbnail", widget: "image"
           # default: "/uploads/chocolate-dogecoin.jpg",
           # media_library: config: ,
         }
   - label: "ICT(英語)"
     name: "ict_en"
-    folder: "blog/ict/{{year}}-{{month}}-{{day}}"
+    folder: "blog/ict/"
     create: true
     slug: "{{fields.slugs}}"
     identifier_field: title
     fields:
-      - {label: "Language", name: "language", widget: "select", options: ["日本語", "英語"],default: ["日本語"]}
+      - {label: "Language", name: "language", widget: "select", options: ["日本語", "英語"], default: ["日本語"]}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Tag", name: "tags", widget: "select",
           options: ["Post", "ICT", "Invest"],
@@ -92,7 +92,7 @@ collections:
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Published Date", name: "date", widget: "date"}
       - {label: "Content", name: "body", widget: "markdown"}
-      - { label: "Thumnail", name: "thumbnail", widget: "image",
+      - { label: "Thumnail", name: "thumbnail", widget: "image"
           # default: "/uploads/chocolate-dogecoin.jpg",
           # media_library: config: ,
         }
