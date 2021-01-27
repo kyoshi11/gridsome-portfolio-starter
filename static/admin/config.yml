@@ -4,13 +4,14 @@ backend:
 locale: 'ja'
 media_folder: "static/uploads"
 public_folder: "/uploads"
+display_url: https://practical-bhaskara-a2b2f5.netlify.app/
 
 publish_mode: editorial_workflow 
 
 collections:
-  - label: "投稿"
+  - label: "Posts（日本語）"
     name: "posts_ja"
-    folder: "blog/posts/"
+    folder: "blog/posts/{{year}}-{{month}}-{{day}}"
     create: true
     slug: "{{fields.slugs}}"
     identifier_field: title
@@ -30,9 +31,9 @@ collections:
           # default: "/uploads/chocolate-dogecoin.jpg",
           # media_library: config: ,
         }
-  - label: "Posts"
+  - label: "Posts（英語）"
     name: "posts_en"
-    folder: "blog/posts/"
+    folder: "blog/posts/{{year}}-{{month}}-{{day}}"
     create: true
     slug: "{{fields.slugs}}"
     identifier_field: title
@@ -53,9 +54,9 @@ collections:
           # media_library: config: ,
         }
 
-  - label: "ICT"
+  - label: "ICT(日本語)"
     name: "ict_ja"
-    folder: "blog/ict"
+    folder: "blog/ict/{{year}}-{{month}}-{{day}}"
     create: true
     slug: "{{fields.slugs}}"
     identifier_field: title
@@ -74,9 +75,9 @@ collections:
           # default: "/uploads/chocolate-dogecoin.jpg",
           # media_library: config: ,
         }
-  - label: "ICT"
+  - label: "ICT(英語)"
     name: "ict_en"
-    folder: "blog/ict"
+    folder: "blog/ict/{{year}}-{{month}}-{{day}}"
     create: true
     slug: "{{fields.slugs}}"
     identifier_field: title
