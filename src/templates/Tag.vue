@@ -13,7 +13,7 @@
             <span>{{ post.node.date }}</span>
             <span> &middot; </span>
             <!--<span>{{ post.node.timeToRead }} min read</span>-->
-            <span>{{ post.node.language }}doyo</span>
+            <span>{{ post.node.language }}</span>
           </div>
 
           <div class="text-lg mb-4">
@@ -52,8 +52,7 @@ query Tag ($id: ID!, $page: Int) {
           ...on Post {
             title
             language
-            timeToRead
-    	      date (format: "MMMM D, YYYY")
+    	      date (format: "Y/MM/D")
             path
             summary
             tags {

@@ -1,9 +1,7 @@
 <template>
   <Layout>
     <div class="container-inner mx-auto py-16">
-      <div>xx::{{ this.$i18n.locale }}</div>
       <div v-for="post in $page.posts.edges" :key="post.id">
-        パス：：{{ post.node.path }}
         <!-- 言語毎に表示を分ける -->
         <div v-if="post.node.language === $context.locale" class="post border-gray-400 border-b mb-12">
           <h2 class="text-3xl font-bold">
@@ -49,7 +47,7 @@ query Posts ($page: Int) {
         id
         title
         language
-        date (format: "MMMM D, Y")
+        date (format: "Y/MM/D")
         summary
         thumbnail
         timeToRead

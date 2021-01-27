@@ -20,7 +20,6 @@ export default {
         path: this.$tp(this.$route.path, this.currentLocale, true)
       })
       this.$context.locale = this.currentLocale
-      alert("言語は" + this.$context.locale + "です")
     }
   }
 }

@@ -27,7 +27,6 @@
     </div>
 
     <div class="overflow-x-hidden">
-      <h1>{{$t('welcome')}}</h1>
       <div class="projects container-inner mx-auto text-xl border-t border-gray-500 border-b py-16 mb-16 relative">
         <h2 class="font-bold mb-6" id="projects">{{ $t('experience project') }}:</h2>
 

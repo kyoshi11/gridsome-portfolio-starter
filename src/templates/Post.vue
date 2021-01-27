@@ -2,10 +2,6 @@
   <Layout>
     <div class="container-inner mx-auto my-16">
       <h1 class="text-4xl font-bold leading-tight">{{ $page.post.title }} normal</h1>
-      <div :aa="$context.locale">Current locale: {{ $context.locale }}</div>
-      <div :bb="$i18n.locale">i18:::{{ this.$i18n.locale }}</div>
-      <div class="mb-8">lang::{{ $page.post.language}}</div>
-      <div :bb="$route.path">path:::{{ this.$route.path }}</div>
       <div class="text-xl text-gray-600 mb-4">{{ $page.post.date }}</div>
       <div class="flex mb-8 text-sm">
         <g-link

@@ -21,6 +21,7 @@
           <li class="mb-6 lg:mb-0">
             <search-input />
           </li>
+          <!-- ロケールスイッチャー表示-->
           <li>
             <locale-switcher></locale-switcher>
           </li>

@@ -1,51 +1,98 @@
 backend:
   name: github
   repo: kyoshi11/gridsome-portfolio-starter
-
+locale: 'ja'
 media_folder: "static/uploads"
 public_folder: "/uploads"
 
 publish_mode: editorial_workflow 
 
 collections:
-  - name: "posts"
-    label: "Posts"
+  - label: "投稿"
+    name: "posts"
     folder: "blog/posts/"
     create: true
     slug: "{{fields.slugs}}"
     identifier_field: title
+    filter: {field: "language", value: "ja"}
     fields:
+      - {label: "言語", name: "language", widget: "select", options: ["日本語", "英語"]}
       - {label: "タイトル", name: "title", widget: "string"}
       - {label: "タグ", name: "tags", widget: "select",
           options: ["投稿", "ICT", "投資"],
           default: ["投稿"]
         }
       - {label: "Slug", name: "slugs", widget: "string"}
-      - {label: "概要", name: "description", widget: "text"}
+      - {label: "説明", name: "description", widget: "text"}
       - {label: "公開日", name: "date", widget: "date"}
       - {label: "内容", name: "body", widget: "markdown"}
       - { label: "サムネイル画像", name: "thumbnail", widget: "image",
           # default: "/uploads/chocolate-dogecoin.jpg",
           # media_library: config: ,
         }
+  - label: "Posts"
+    name: "posts"
+    folder: "blog/posts/"
+    create: true
+    slug: "{{fields.slugs}}"
+    identifier_field: title
+    filter: {field: "language", value: "en"}
+    fields:
+      - {label: "Language", name: "language", widget: "select", options: ["en", "ja"]}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Tag", name: "tags", widget: "select",
+          options: ["Post", "ICT", "Invest"],
+          default: ["Post"]
+        }
+      - {label: "Slug", name: "slugs", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Published Date", name: "date", widget: "date"}
+      - {label: "Content", name: "body", widget: "markdown"}
+      - { label: "Thumnail", name: "thumbnail", widget: "image",
+          # default: "/uploads/chocolate-dogecoin.jpg",
+          # media_library: config: ,
+        }
 
-  - name: "ict"
-    label: "Ict"
+  - label: "ICT Ja"
+    name: "ict"
     folder: "blog/ict"
     create: true
     slug: "{{fields.slugs}}"
     identifier_field: title
     fields:
+      - {label: "言語", name: "language", widget: "select", options: ["日本語", "英語"]}
       - {label: "タイトル", name: "title", widget: "string"}
       - {label: "タグ", name: "tags", widget: "select",
           options: ["投稿", "ICT", "投資"],
           default: ["ICT"]
         }
       - {label: "Slug", name: "slugs", widget: "string"}
-      - {label: "概要",name: "description", widget: "text"}
+      - {label: "説明", name: "description", widget: "text"}
       - {label: "公開日", name: "date", widget: "date"}
       - {label: "内容", name: "body", widget: "markdown"}
       - { label: "サムネイル画像", name: "thumbnail", widget: "image",
           # default: "/uploads/chocolate-dogecoin.jpg",
           # media_library: config: ,
         }
+  - label: "ICT En"
+    name: "ict"
+    folder: "blog/ict"
+    create: true
+    slug: "{{fields.slugs}}"
+    identifier_field: title
+    fields:
+      - {label: "Language", name: "language", widget: "select", options: ["日本語", "英語"]}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Tag", name: "tags", widget: "select",
+          options: ["Post", "ICT", "Invest"],
+          default: ["ICT"]
+        }
+      - {label: "Slug", name: "slugs", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Published Date", name: "date", widget: "date"}
+      - {label: "Content", name: "body", widget: "markdown"}
+      - { label: "Thumnail", name: "thumbnail", widget: "image",
+          # default: "/uploads/chocolate-dogecoin.jpg",
+          # media_library: config: ,
+        }
+
