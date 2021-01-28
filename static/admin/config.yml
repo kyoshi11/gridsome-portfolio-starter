@@ -13,13 +13,14 @@ collections:
     name: "posts_ja"
     folder: "blog/posts/"
     create: true
-    slug: "{{fields.slugs}}"
+    #slug: "{{fields.slugs}}"
+    slug: "blog/{{slugs}}"
     identifier_field: title
     filter: {field: "language", value: "ja"}
     fields:
-      - {label: "言語", name: "language", widget: "select", options: ["日本語", "英語"],default: ["日本語"]}
+      - {label: "言語", name: "language", widget: "select", options: ["日本語", "英語"], default: ["日本語"]}
       - {label: "タイトル", name: "title", widget: "string"}
-      - {label: "タグ", name: "tags", widget: "select",default: ["日本語"],
+      - {label: "タグ", name: "tags", widget: "select", default: ["日本語"],
           options: ["投稿", "ICT", "投資"],
           default: ["投稿"]
         }
@@ -35,7 +36,8 @@ collections:
     name: "posts_en"
     folder: "blog/posts/"
     create: true
-    slug: "{{fields.slugs}}"
+    # slug: "{{fields.slugs}}"
+    slug: "blog/{{slugs}}"
     identifier_field: title
     filter: {field: "language", value: "en"}
     fields:
@@ -58,7 +60,8 @@ collections:
     name: "ict_ja"
     folder: "blog/ict/"
     create: true
-    slug: "{{fields.slugs}}"
+    # slug: "{{fields.slugs}}"
+    slug: "blog/{{slugs}}"
     identifier_field: title
     fields:
       - {label: "言語", name: "language", widget: "select", options: ["日本語", "英語"], default: ["日本語"]}
@@ -79,7 +82,8 @@ collections:
     name: "ict_en"
     folder: "blog/ict/"
     create: true
-    slug: "{{fields.slugs}}"
+    # slug: "{{fields.slugs}}"
+    slug: "blog/{{slugs}}"
     identifier_field: title
     fields:
       - {label: "Language", name: "language", widget: "select", options: ["日本語", "英語"], default: ["日本語"]}
